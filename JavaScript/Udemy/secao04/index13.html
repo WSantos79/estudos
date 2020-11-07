@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <<title>Seção 04 - Aula 13</title>
+</head>
+<body>
+    <h1>Seção 04 - Aula 13</h1>
+
+    <script>
+        // Escopo de variaveis
+
+        function somar(num1, num2){
+            var valor = 5;      // variavel local
+            return num1 + num2 + valor;
+        }
+
+        console.log(somar(4, 6));
+
+      //  console.log(valor); // nao temos acesso ao valor, pois foi declarada dentro de uma funçao
+
+
+      for (var i = 0; i < 5; i++){
+          var outra = 5;    // variavel global
+          let uma = 12;     // variavel locais... se declarar let, sera local
+          console.log(i * outra);
+      }
+
+        // SEMPRE que possivel trabalhar com variaveis locais
+
+      console.log(outra); // temos acesso, pois foi declarada dentro de um bloco FOR
+
+
+
+    </script>
+</body>
+</html>
