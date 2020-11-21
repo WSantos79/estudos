@@ -1,0 +1,37 @@
+.btn-yellow {
+    background-color: yellow;
+    color: black;
+    height: 200px;
+    width: 200px;
+}
+
+.btn-black {
+    background-color: black;
+    color: yellow;
+    height: 200px;
+    width: 200px;
+}
+
+.btn-red {
+    background-color: red;
+    color: black;
+    height: 200px;
+    width: 200px;
+}
+
+.btn-blue {
+    background-color: blue;
+    color: black;
+    height: 200px;
+    width: 200px;
+}
+
+.btn-green {
+    background-color: green;
+    color: black;
+    height: 200px;
+    width: 200px;
+}
+
+
+
