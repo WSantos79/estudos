@@ -1,0 +1,25 @@
+{
+  "name": "secao11",
+  "version": "1.0.0",
+  "description": "Aulas JS",
+  "main": "index.js",
+  "repository": "https://github.com/WSantos79/Estudos-VS.git",
+  "author": "WSantos79 <58752564+WSantos79@users.noreply.github.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.12.8",
+    "@babel/preset-env": "^7.12.7",
+    "babel-loader": "^8.2.1",
+    "webpack": "^5.6.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "scripts": {
+    "dev": "babel ./JavaScript/Udemy/secao11/aula07.js -o ./JavaScript/Udemy/secao11/bundle.js -w",
+    "dev2": "webpack-dev-server --mode=development",
+    "prod": "webpack --mode=production"
+  },
+  "dependencies": {
+    "webpack-cli": "3"
+  }
+}
