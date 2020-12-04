@@ -1,0 +1,15 @@
+ h2 {
+     margin: 0 auto;
+     color: red;          
+     font-size: 2rem;
+     font-weight: bold;
+ }
+
+ body {
+     background-color: yellow;
+ }
+
+ p {
+     font-weight: bold;
+     font-size: 1.2rem;
+ }
