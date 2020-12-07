@@ -1,15 +1,14 @@
-window.onload = evento => start(evento);
-
 let globalNames = ['Um', 'Dois', "666"];
 let inputName = document.querySelector('#inputName');
 let isEditing = false;
 let currentIndex = null;
 
-function start() {
+window.addEventListener('load', () => {
     preventFormSubmit();
     activateInput();
     render();
-}
+});
+
 
 function preventFormSubmit() {
     function handleFormSubmit(event) {
