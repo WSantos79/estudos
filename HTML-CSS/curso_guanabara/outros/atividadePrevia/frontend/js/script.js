@@ -27,7 +27,7 @@ async function start() {
     const style =
       index % 2 === 0
         ? 'backgroundColor: black; color: black' // mudar para white
-        : 'backgroundColor: black; color: orange';
+        : 'backgroundColor: black; color: red';
 
     console.log(
       `%c Questão ${(index + 1).toString().padStart(2, '0')}: ${answer}`,
@@ -43,11 +43,21 @@ function question01() {
   return recipes.length;
 }
 
+var sumPrices = 0;
+
 function question02() {
   /**
    * Questão 02: Qual é a média de preços das receitas?
    */
-  return 0;
+  
+   for(let i = 0; i < recipes.length; i++){
+     let currentRecipe = recipes[i];
+     sumPrices += currentRecipe.price;    
+   }
+
+   let average = sumPrices / question01();
+
+  return moneyFormatter.format(average);
 }
 
 function question03() {
@@ -56,7 +66,11 @@ function question03() {
    * Dica 01: formate o número obtido com o moneyFormatter, declarado
    * no início deste arquivo
    */
-  return 0;
+  const sortedRecipes =[...recipes].sort((a, b) => b.price - a.price);
+  const {title, price} = sortedRecipes[0];
+ 
+  return `${title} | ${moneyFormatter.format(price)}`;
+
 }
 
 function question04() {
@@ -64,7 +78,10 @@ function question04() {
    * Questão 04: Qual é a receita que possui mais ingredientes? Mostre também a
    * quantidade de ingredientes desta receita
    */
-  return 0;
+  const sortedRecipes =[...recipes].sort((a, b) => b.ingredients.length - a.ingredients.length);
+  const {title, ingredients} = sortedRecipes[0];
+ 
+  return `${title} | ${ingredients.length}`;  
 }
 
 function question05() {
@@ -76,7 +93,10 @@ function question05() {
    * Dica 03: pesquise por Set em JavaScript e faça a re-conversão
    * para array com Array.from
    */
-  return 0;
+  const allIngredients = recipes.map(recipe => recipe.ingredients).flat();
+  const uniqueIngredients = Array.from(new Set(allIngredients)).sort();
+
+  return uniqueIngredients.join(', ');
 }
 
 function question06() {
@@ -89,7 +109,16 @@ function question06() {
    * Dica 04: pesquise pelo método array.includes
    * Dica 05: pesquise pelo método array.split
    */
-  return 0;
+    const uniqueIngredients = question05().split(', ');
+    const ingredientsOfEvertRecipe = [];
+
+    uniqueIngredients.forEach(ingredients => {
+      if (recipes.every(recipe => recipe.ingredients.includes(ingredients))){
+        ingredientsOfEvertRecipe.push(ingredients);
+      }
+    })
+
+  return ingredientsOfEvertRecipe;
 }
 
 function question07() {
@@ -97,7 +126,10 @@ function question07() {
    * Questão 07: Quantas receitas possuem "uva" como ingrediente?
    * Dica 01: pesquise pelo método array.includes
    */
-  return 0;
+
+   const filter = recipes.filter(recipe => recipe.ingredients.includes('uva'));
+
+  return filter.length;
 }
 
 function question08() {
@@ -105,7 +137,10 @@ function question08() {
    * Questão 08: Quantas receitas possuem "abóbora" e "aveia" como ingredientes?
    * Dica 01: pesquise pelo método array.includes
    */
-  return 0;
+
+   const filter = recipes.filter(({ingredients}) =>
+   ingredients.includes('aveia') && ('abóbora'))
+  return filter.length;
 }
 
 function question09() {
@@ -121,7 +156,7 @@ function question10() {
    * Questão 10: Qual seria o faturamento bruto mensal se fossem vendidos,
    * durante um mês, 3 itens de cada receita?
    */
-  return 0;
+  return moneyFormatter.format(sumPrices * 3);
 }
 
 start();
