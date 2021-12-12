@@ -1,0 +1,54 @@
+/* .cabecalhoPrincipal-titulo, .cabecalhoPrincipal-nav, .cabecalhoPrincipal-nav-link {
+    display: inline;
+    
+}
+
+.cabecalhoPrincipal-nav {
+    margin: 0 0 0  50%;
+}
+
+.cabecalhoPrincipal-titulo {
+    vertical-align: middle;
+}  */
+
+
+.cabecalhoPrincipal .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecalhoPrincipal-nav {
+   display: flex;
+}
+
+
+/*  --------------RODA PÉ---------------------  */
+.rodapePrincipal-navMap-list {
+    display: flex; 
+    flex-direction: column;   /* flex-flow: column wrap     */
+    height: 260px;
+    flex-wrap: wrap;
+
+}
+
+
+
+
+/*   RODA PÉ   */
+
+.rodapePrincipal-patrocinadores .container {
+    display: flex;
+    justify-content: space-between;   
+}
+
+.rodapePrincipal-patrocinadores-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+    display: flex;
+}

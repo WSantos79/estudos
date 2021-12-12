@@ -1,0 +1,221 @@
+/* 
+
+Arquivo: estilo.css 
+
+Autor: Diego Mariano
+
+Códigos de cores foram obtidos em: https://color.adobe.com/pt/create/color-wheel
+
+*/
+
+ 
+
+ 
+
+/* Removendo propridades margin e padding padrão de navegadores */
+
+*{
+
+	margin:0px; /* margem externa */
+
+	padding: 0px; /* margem interna */
+
+}
+
+ 
+
+/* ------------------------- Tags principais ------------------------- */
+
+ 
+
+body{
+
+	font-family: "helvetica", "arial narrow", "arial"; /*  */
+
+	color:rgb(20, 18, 18); /* cor de texto: variante da cor preta; */
+
+}
+
+ 
+
+a{
+
+	color: #31D1BB; /* cor: variante de verde; */
+
+}
+
+ 
+
+header{
+
+	height: 80px; /* altura de 80px */
+
+	background-color: #111; /* cor de fundo: variação da cor preta */
+
+}
+
+ 
+
+nav{
+
+	float:right; /* alinhamento à direita */ 
+
+	margin-top:30px; /* margem para o topo de 30px */
+
+}
+
+ 
+
+nav a{
+
+	color:#f4f4f4; /* Cor do texto: variação de branco */ 
+
+	text-decoration: none; /* Remove o sublinhado do link*/
+
+	padding:30px 20px; /* margem interna */
+
+}
+
+ 
+
+nav a:hover{ /* :hover aplica um estilo quando o mouse está sobre um item */
+
+	background-color: #31D1BB; /* cor de fundo: variante de verde; */
+
+}
+
+ 
+
+h1{
+
+	font-size: 60px; /* tamanho da fonte 60px */
+
+}
+
+h5{
+
+	color:#777; /* cor: variação de cinza; */
+
+	padding:5px 0 0 5px; /* margem para o topo e direita de 5px */
+
+}
+
+ 
+
+article{
+
+	padding:30px 0; /* margem interna para topo e rodapé de 30px */
+
+}
+
+ 
+
+label{
+
+	font-weight: bold; /* negrito */
+
+	font-size:14px; /* tamanho de texto 14px */
+
+}
+
+ 
+
+footer{
+
+	text-align: center; /* texto alinhado ao centro */
+
+	background-color:#ccc; /* cor de fundo: cinza claro; */
+
+	margin-top:50px; /* margem para o elemento anterior de 50px */
+
+	padding: 20px 0; /* margem interna de 20px (topo e rodapé) */
+
+	color:#111; /* cor de texto: preto */
+
+}
+
+ 
+
+input{
+
+	width: calc(100% - 20px); /* calc determina o tamanho máximo - 20px (padding) */ 
+
+	padding:10px; /* 10px de margem interna */
+
+}
+
+ 
+
+textarea{
+
+	width: calc(100% - 20px); /* calc determina o tamanho máximo - 20px (padding) */
+
+	padding: 10px; /* 10px de margem interna */
+
+}
+
+ 
+
+/* ------------------------- IDs ------------------------- */
+
+#logo{
+
+	float: left; /* posicionamento à esquerda */
+
+	margin-top:10px; /* margem para o topo de 10px */
+
+}
+
+ 
+
+#cabecalho-interno{
+
+	padding: 50px; /* margem interna de 50px */
+
+	background-color:#ccc; /* cor de fundo: cinza claro; */
+
+}
+
+ 
+
+/* ------------------------- Classes ------------------------- */
+
+.container{
+
+	width: 960px; /* largura fixa de 960px */
+
+	margin:0 auto;/* margem automática nos lados esquerdo e direito */
+
+}
+
+ 
+
+.botao-enviar{
+
+	background-color: #02B81A; /* cor de fundo: variaçãode verde claro; */
+
+	border: solid 1px #016B0F; /* cor de borda: variação de verde escuro; */
+
+	color:white; /* cor de texto: branco; */
+
+	padding: 20px; /* margem interna: 20px; */
+
+	width: 100%; /* largura: 100%; */
+
+}
+
+ 
+
+.linha{
+
+	margin:10px 0 20px 0; /* margem topo 10px e para o rodapé de 20px */
+
+}
+
+ 
+
+.coluna{
+
+	width: 50%; /* 50% de largura */
+
+	float:left; /* posicionamento à esquerda */

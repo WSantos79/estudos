@@ -7,8 +7,87 @@
 </head>
 <body>
      <h1>Ola, Mundo!</h1>
-      <hr>
+     <hr>
      <p>Esse é o meu primeiro docuemnto HTML! Estou muito  feliz!</p>
       <p>Este é um momento único! Estou criando um site!</p>
+      <hr>
+
+      <table border = 1 bgcolor = yellow>
+        <tr>
+            <th>#</th>
+            <th>testeA</th>
+            <th>testeB</th>
+            <th>testeC</th>
+        </tr>
+    
+        <tr>
+            <td>1</td>
+            <td>teste1A</td>
+            <td>teste1B</td>
+            <td>teste1C</td>
+        </tr>
+    
+        <tr>
+            <td>2</td>
+            <td colspan="2">2A</td>
+            <td>2B</td>
+            <td>2C</td>
+        </tr>
+    
+        <tr>
+            <td>3</td>
+            <td>3A</td>
+            <td>3B</td>
+            <td bgcolor="red">O que você precisa ? 3C</td>
+        </tr>
+    </table>
+    <br><br>
+    <form 
+
+    name="Meu primeiro formulário"
+
+    method="POST"
+
+    action="gravaDados.php"
+
+    enctype="multipart/form-data"
+
+>
+
+    <label>Dias da semana:</label>
+
+    <select name="dias_da_semana">
+
+        <option value="segunda">Segunda-Feira</option>
+
+        <option value="terca">Terça-Feira</option>
+
+        <option value="quarta">Quarta-Feira</option>
+
+        <option value="quinta">Quinta-Feira</option>
+
+        <option value="sexta">Sexta-Feira</option>
+
+        <option value="sabado">Sábado</option>
+
+        <option value="domingo">Domingo</option>
+
+    </select>
+
+    <br><br>
+
+    <label>Contato:</label>
+
+    <textarea placeholder="Digite sua mensagem"></textarea>
+
+    <br>
+<br>
+    <label>         Enviar:</label>
+
+    <button>Clique aqui</button>
+    <input type="date">
+</form>
+<br>
+<input type="color">
 </body>
 </html>
