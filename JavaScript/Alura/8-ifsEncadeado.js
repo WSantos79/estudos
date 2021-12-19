@@ -10,8 +10,8 @@ const destino = new Array(
 destino.push(`Curitiba`);
 
 
-const idadeComprador = 12;
-const estaAcompanhada = false;
+let idadeComprador = 12;
+let estaAcompanhada = false;
 
 /*
 if (idadeComprador >= 18) {
@@ -25,6 +25,12 @@ if (idadeComprador >= 18) {
     console.log(`É proibido a venda de passagens para menores de idade sem o responsável`);
 }   */
 
+idadeComprador = 12;
+estaAcompanhada = false;
 
-
-
+if (idadeComprador >= 18 || estaAcompanhada) {
+    console.log(`Destinos possíveis`);
+    console.log(destino);
+}else {
+    console.log(`É proibido a venda de passagens para menores de idade sem o responsável.`);
+} 
