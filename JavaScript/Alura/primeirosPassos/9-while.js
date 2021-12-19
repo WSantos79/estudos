@@ -11,12 +11,12 @@ listaDeDestinos.push(`Curitiba`);
 const idadeComprador = 18;
 const estaAcompanhada = false;
 let temPassagemComprada = false;
-let destino = "as"
+let destino = "Curitiba"
 
 const podeComprar =  idadeComprador >= 18 || estaAcompanhada == true;
 
-let contador = 0
-while(contador<3){
+let contador = 0;
+while(contador <= 5){
     if(listaDeDestinos[contador] == destino){
         console.log("Destino existe") 
     }else{ 
@@ -28,9 +28,9 @@ while(contador<3){
 console.log("\n \n \n")
 let destinoExiste = false;
 let i = 0
-destino = `São Paulo`;
+destino = `Curitiba`;
  
-while (i < 3){
+while (i <= 5){
     if(listaDeDestinos[i] == destino){
         console.log("Destino existe")
         destinoExiste = true;
