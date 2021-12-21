@@ -1,20 +1,26 @@
 const criarTarefa = (evento) => {
     evento.preventDefault();
 
-    const inputValue = document.querySelector(".form-input").value;
+    const input = document.querySelector(".form-input");
+    const inputValue = input.value;
+
+    const lista = document.querySelector ('[data-list]');
     
-    const tarefa = document.querySelector ('[data-task]');
-    const conteudo = `
-    <li class="task">
-    <p class="content">${inputValue}</p>
-    </li>`
+
+    const tarefa = document.createElement('li');
+    tarefa.classList.add('task');
+    const conteudo = `<p class="content">${inputValue}</p>`;
 
     tarefa.innerHTML = conteudo;
 
-    inputValue = " ";
+    lista.appendChild(tarefa);
+
+    input.value = " ";
 }
 
 const novaTarefa = document.querySelector(".form-button");
 
 
 novaTarefa.addEventListener('click', criarTarefa);
+
+
