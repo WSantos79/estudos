@@ -1,0 +1,14 @@
+body {    
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#650f0b+15,c91e15+45,c91e15+55,650f0b+85 */
+    background: rgb(101,15,11); /* Old browsers */
+    background: -moz-linear-gradient(left,  rgba(101,15,11,1) 15%, rgba(201,30,21,1) 45%, rgba(201,30,21,1) 55%, rgba(101,15,11,1) 85%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(101,15,11,1) 15%,rgba(201,30,21,1) 45%,rgba(201,30,21,1) 55%,rgba(101,15,11,1) 85%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(101,15,11,1) 15%,rgba(201,30,21,1) 45%,rgba(201,30,21,1) 55%,rgba(101,15,11,1) 85%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#650f0b', endColorstr='#650f0b',GradientType=1 ); /* IE6-9 */
+}
+.lista-pokemon {
+    color: white;
+    font-weight: bold;
+    line-height: 1.5rem;
+    
+}
