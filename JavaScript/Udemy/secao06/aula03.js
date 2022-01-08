@@ -40,3 +40,22 @@ console.log(somar(5)); // NaN > Not a Number
 console.log(somar(5, 5, 6)); // 10
 
 
+
+function calcular_idade_Certa_total(dia_nascimento, mes_nascimento, ano_nascimento){
+    const data = new Date(); // New date gera a data atual
+ /// eu que fiz depois do curso essa função
+    let dia_atual = data.getDay();
+    let mes_atual = data.getMonth() + 1;
+    let ano_atual = data.getFullYear();  
+    
+    let idade = ano_atual - ano_nascimento;
+
+    if (mes_atual < mes_nascimento || mes_atual == mes_nascimento && dia_atual < dia_nascimento) {
+        idade--;
+    }
+
+   return idade < 0 ? 0 : idade;
+}
+
+console.log(calcular_idade_Certa_total(01, 07, 1988)); // eu
+console.log(calcular_idade_Certa_total(22, 01, 1986))  // mo
