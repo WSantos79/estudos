@@ -1,7 +1,10 @@
 import {Cliente} from "./Cliente.js"
-import { Conta } from "./Conta.js";
-import {ContaCorrente} from "./ContaCorrente.js"
-import { ContaPoupanca } from "./ContaPoupanca.js";
+import {ContaCorrente} from "./Conta/ContaCorrente.js"
+import { ContaPoupanca } from "./Conta/ContaPoupanca.js";
+import { ContaSalario } from "./Conta/ContaSalario.js";
+import { Diretor } from "./Funcionarios/Diretor.js";
+import { Gerente } from "./Funcionarios/gerente.js";
+import { SistemaAutenticacao } from "./SistemaAutenticacao.js";
 
 
 const cliente1 = new Cliente("Ricardo", 11122233304);
@@ -47,5 +50,16 @@ conta2.saque(100);
 console.log(ContaCorrente.numeroDeContas);
 
 
-const contax = new Conta(0, cliente1, 1001);
-console.log(contax);
+const contaSalario = new ContaSalario(cliente1);
+contaSalario.deposito(300);
+contaSalario.saque(100);
+
+console.log(contaSalario);
+
+const gerente = new Gerente('Well', 5000, 111222333444);
+const diretor = new Diretor('Well', 5000, 111222333444);
+diretor.cadastrarSenha(1234);
+
+const estalogado = SistemaAutenticacao.login(diretor, "1234");
+
+console.log(estalogado);
