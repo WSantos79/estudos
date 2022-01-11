@@ -62,4 +62,10 @@ diretor.cadastrarSenha(1234);
 
 const estalogado = SistemaAutenticacao.login(diretor, "1234");
 
-console.log(estalogado);
+const cliente4 = new Cliente("Zé", 22222222202, "4321");
+
+const clientelogado = SistemaAutenticacao.login(cliente4, "4321");
+
+
+
+console.log(estalogado, clientelogado);
