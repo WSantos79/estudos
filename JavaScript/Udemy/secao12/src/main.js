@@ -113,7 +113,7 @@ class App {
             let txtA = document.createTextNode('Acessar');
             a.appendChild(txtA);
             li.appendChild(a);
-
+            
             // adicionar <li> como filho da ul
             this.lista.appendChild(li);
 
