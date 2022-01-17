@@ -21,6 +21,10 @@ export class FormularioCadastro extends Component {
         event.preventDefault();
         event.stopPropagation();
         this.props.criarNota(this.titulo, this.texto);
+        {
+        document.querySelector("input").value = ""; 
+        document.querySelector("textarea").value = "";              
+        }
     }
     render(){
         return(
