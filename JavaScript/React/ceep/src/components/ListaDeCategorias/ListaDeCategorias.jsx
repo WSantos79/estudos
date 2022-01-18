@@ -2,7 +2,13 @@ import React, {Component} from "react";
 import"./style.css"
 
 export class ListaDeCategorias extends Component {
+    componentDidMount(){
+        this.props.categorias.inscrever(this._novasCategorias.bind(this));
+    }
 
+    _novasCategorias(categorias){
+        this.render(categorias);
+    }
     _handleEventoInput(e){
         e.preventDefault();
         if(e.keyCode === 13){
@@ -17,7 +23,7 @@ export class ListaDeCategorias extends Component {
         return(
             <section className="lista-categorias"> 
                 <ul className="lista-categorias_lista">
-                    {this.props.categorias.map((categoria, index) =>{
+                    {this.props.categorias.categorias.map((categoria, index) =>{
                         
                         return <li key={index} className="lista-categorias_item">{categoria}</li> 
                     })}
