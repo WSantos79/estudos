@@ -7,6 +7,21 @@ export class FormularioCadastro extends Component {
         this.titulo = "";
         this.texto = "";
         this.categoria ="Sem Categoria";
+        this.state = {categorias: []}
+
+
+        this._novasCategorias = this._novasCategorias.bind(this); // para chamar  o mesmo bind na hora 
+    }
+    
+    componentDidMount(){ // inicia depois de renderizr a td a pag        
+        this.props.categorias.inscrever(this._novasCategorias);
+        // me inscreve em categorias e quando tiver alguma mudança execute a funçao _novasCategorias
+    }
+    componentWillUnmount(){ // desmonta td
+        this.props.categorias.desinscrever(this._novasCategorias);
+    }
+    _novasCategorias(categorias){
+        this.setState({...this.state, categorias});
     }
     _handleMudancaCategoria(e){
         e.stopPropagation();
@@ -41,8 +56,8 @@ export class FormularioCadastro extends Component {
 
                     <option>Sem Categoria</option>
 
-                    { this.props.categorias.map(categoria => {
-                        return <option>{categoria}</option>
+                    { this.state.categorias.map((categoria, index) => {
+                        return <option key={index}>{categoria}</option>
                     })}
                 </select>
                 <input 
