@@ -12,7 +12,7 @@
     "@babel/preset-env": "^7.12.7",
     "babel-loader": "^8.2.1",
     "webpack": "^5.6.0",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^4.7.3"
   },
   "scripts": {
     "dev": "babel ./JavaScript/Udemy/secao11/aula07.js -o ./JavaScript/Udemy/secao11/bundle.js -w",
@@ -20,6 +20,10 @@
     "prod": "webpack --mode=production"
   },
   "dependencies": {
-    "webpack-cli": "3"
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@fontsource/roboto": "^4.5.1",
+    "@mui/material": "^5.3.0",
+    "webpack-cli": "^4.9.1"
   }
 }

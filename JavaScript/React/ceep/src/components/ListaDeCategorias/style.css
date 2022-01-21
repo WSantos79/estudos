@@ -19,3 +19,11 @@
 .lista-categorias_input{
     margin-right: 20px;
 }
+.lista-categoria-div{
+    display: flex;
+    flex-direction: column;
+}
+
+.lista-categoria-busca{
+    margin-top: 1rem ;
+}

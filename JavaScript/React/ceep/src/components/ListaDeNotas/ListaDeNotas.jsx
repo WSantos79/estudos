@@ -6,18 +6,19 @@ export class ListaDeNotas extends Component{
     constructor(){
         super();
         this.state = {notas: []}
-
-        this.novaNota = this._novaNota.bind(this);
+        
+        this.novaNota = this._novaNota.bind(this);  /// para chamar o mesmo bind na hora
     }
     componentDidMount(){
-        this.props.notas.inscrever(this.novaNota);
+        this.props.notas.inscrever(this.novaNota);        
     }
     componentWillUnmount(){ // desmonta td
-        this.props.nota.desinscrever(this._novaNota);
+        this.props.notas.desinscrever(this._novaNota);
     }
     _novaNota(notas){
         this.setState({...this.state, notas});
     }
+
     render(){
         return(
             <ul className="lista-notas">

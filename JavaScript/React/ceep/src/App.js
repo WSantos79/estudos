@@ -6,12 +6,15 @@ import "./assets/App.css";
 import './assets/index.css'
 import { Categorias } from './dados/Categorias';
 import { ArrayDeNotas } from './dados/Notas';
+import { Buscar } from './dados/Busca';
 
 class App extends Component {
   constructor(){
     super();
     this.categorias = new Categorias();
     this.notas = new ArrayDeNotas();
+    this.busca = new Buscar();
+
     //this.state = {
       //notas:[],
       //categorias:[]
@@ -48,6 +51,8 @@ class App extends Component {
           <ListaDeCategorias 
           categorias={this.categorias}
           adicionarCategoria={this.categorias.adicionarCategoria.bind(this.categorias)}
+          busca={this.busca}
+          search={this.busca.search.bind(this.busca)}
           />
           <ListaDeNotas 
           notas={this.notas}
