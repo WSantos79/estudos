@@ -18,6 +18,8 @@ export class ListaDeCategorias extends Component {
     }
     buscarCategoria(buscar){
         console.log(buscar)
+     
+        this.setState({...this.state, buscar});
     }
     _novasCategorias(categorias){
         this.setState({...this.state, categorias});
@@ -33,8 +35,10 @@ export class ListaDeCategorias extends Component {
     _handleEventoBusca(e){
         e.preventDefault();
         let buscar = e.target.value;  
-        let categoria = this.state.categorias;      
-        this.props.search(categoria, buscar);
+        this.state.categorias.includes(buscar)
+
+      //  let categoria = this.state.categorias;      
+       // this.props.search(categoria, buscar);
     }
     render(){
         return(

@@ -16,7 +16,13 @@ export class Buscar {
         // notificar todos os inscritos sobre a mudança, 
     }
     search(categoria, buscar){
-              
-        this.notificar(categoria.includes(buscar));
+        categoria.forEach(categoria => { 
+           if(categoria.includes(buscar)){
+               this.notificar(categoria)
+           }
+
+        })
     }
+
+
 }
