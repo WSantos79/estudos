@@ -1,36 +1,38 @@
-import React from "react";
-import { Button, formControlClasses } from "@mui/material";
-import { TextField } from "@mui/material";
-import { Switch } from "@mui/material";
-import { FormControlLabel } from "@mui/material";
-import { useState } from "react";
+import React , { useState, useContext } from "react";
+import { Button, TextField, Switch, FormControlLabel} from "@mui/material";
+import ValidacoesCadastro from "../../context/ValidacoesCadastro";
+import useErros from "../../hooks/useErros";
 
-export default function DadosPessoais({aoEnviar, validar}) {
+export default function DadosPessoais({ aoEnviar }) {
   const [nome, setNome] = useState("");
   const [sobrenome, setSobrenome] = useState("");
   const [cpf, setCpf] = useState("");
   const [promocoes, setPromocoes] = useState(true);
   const [novidades, setNovidades] = useState(true);
-  const [erros, setErros] = useState({cpf:{valido:true, texto:""}});
-  
+
+  const validacoes = useContext(ValidacoesCadastro);
+  const [erros, validarCampos, possoEnviar] = useErros(validacoes);
 
   return (
     <form
       onSubmit={(event) => {
         event.preventDefault();
-        aoEnviar({nome, sobrenome, cpf, promocoes, novidades})
+        if (possoEnviar()) {
+          aoEnviar({ nome, sobrenome, cpf, promocoes, novidades });
+        }
       }}
     >
       <TextField
         value={nome}
         onChange={(event) => {
-          let tempNome = event.target.value;
-          if (tempNome.length >= 12) {
-            tempNome = tempNome.substr(0, 12);
-          }
-          setNome(tempNome);
+          setNome(event.target.value);
         }}
+        onBlur={validarCampos}
+        error={!erros.nome.valido}
+        helperText={erros.nome.texto}
         id="nome"
+        name="nome"
+        required
         label="Nome"
         type="text"
         variant="outlined"
@@ -43,8 +45,14 @@ export default function DadosPessoais({aoEnviar, validar}) {
         onChange={(event) => {
           setSobrenome(event.target.value);
         }}
-        id="sobrenome-basic"
+        onBlur={validarCampos}
+        error={!erros.sobrenome.valido}
+        helperText={erros.sobrenome.texto}
+        name="sobrenome"
+        id="sobrenome"
+        name="sobrenome"
         label="Sobrenome"
+        required
         type="text"
         variant="outlined"
         fullWidth
@@ -53,16 +61,15 @@ export default function DadosPessoais({aoEnviar, validar}) {
 
       <TextField
         value={cpf}
-        onChange={(event) => {         
+        onChange={(event) => {
           setCpf(event.target.value);
         }}
-        onBlur={(event) => {
-          const ehValido = validar(event.target.value);
-          setErros({cpf:ehValido})
-        }}
+        onBlur={validarCampos}
         error={!erros.cpf.valido}
         helperText={erros.cpf.texto}
         id="cpf"
+        name="cpf"
+        required
         label="CPF"
         type="number"
         variant="outlined"
@@ -101,7 +108,7 @@ export default function DadosPessoais({aoEnviar, validar}) {
       />
 
       <Button variant="contained" color="primary" type="submit">
-        Cadastrar
+        Próximo
       </Button>
     </form>
   );
