@@ -1,3 +1,3 @@
 # Estudos-VS
 
-Este repositório foi feito para que eu possa organizar melhor meu estudos feitos em linguagens como: HTML, CSS, JavaScript
+Este repositório foi feito para que eu possa organizar melhor meus estudos, contendo projetos feitos durante cursos em: HTML, CSS, JavaScript
