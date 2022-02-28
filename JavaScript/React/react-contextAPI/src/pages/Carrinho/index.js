@@ -10,7 +10,7 @@ import { usePagamentoContext } from 'common/context/Pagamento';
 
 function Carrinho() {
   const [openSnackbar, setOpenSnackbar] = useState(false);
-  const { carrinho, valorTotal, saldoTotal } = useCarrinhoContext();
+  const { carrinho, valorTotal, saldoTotal, efetuarCompra } = useCarrinhoContext();
   const { saldo } = useContext(UsuarioContext);
   const { formaPagamento, tiposPagamento, mudarFormaPagamento } = usePagamentoContext();
   
@@ -60,9 +60,10 @@ function Carrinho() {
       <Button
        
         onClick={() => {
+          efetuarCompra();
           setOpenSnackbar(true);
         }}
-        disabled={saldoTotal < 0}
+        disabled={saldoTotal < 0 || carrinho.length === 0}
         color="primary"
         variant="contained"
       >
