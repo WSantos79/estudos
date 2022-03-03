@@ -20,6 +20,27 @@
 .cabecalhoPrincipal-nav {
   display: flex;
 }
+.videoSobre .container {
+    display: flex;
+    width: 70%;
+}
+
+.videoSobre-sobre {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; 
+}
+
+.videoSobre-sobre-list {
+    flex-grow: 1;
+}
+
+.videoSobre-video {
+    flex-grow: 0.5;
+    flex-shrink: 2; /* quando diminiu a tela, esse item diminiu 2x mais que o outro .... colocar 0 para manter o msm tamanho*/
+}
+
 
 /*  --------------RODA PÉ---------------------  */
 .rodapePrincipal-navMap-list {
@@ -110,4 +131,15 @@
   .rodapePrincipal-contatoForm-fieldset {
     justify-content: center;
   }
+
+  .cabecalhoPrincipal-nav-link-app {
+    order: -1;
+  }
+
+    .videoSobre .container {
+        flex-direction: column;
+    }
+    .videoSobre-video {
+        margin: 0 auto;
+    }
 }
