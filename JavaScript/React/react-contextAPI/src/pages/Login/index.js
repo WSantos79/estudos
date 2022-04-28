@@ -14,7 +14,7 @@ import { UsuarioContext } from 'common/context/Usuario';
 import { useContext } from 'react';
 
 function Login() {
-  const history = useHistory();
+  
   const { nome, setNome, saldo, setSaldo } = useContext(UsuarioContext);
   return (
     <Container>
