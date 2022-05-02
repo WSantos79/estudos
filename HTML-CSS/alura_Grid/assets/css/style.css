@@ -10,14 +10,23 @@
     grid-template-rows: 50px auto auto;
 }
 
-.cabecalho {    
+.cabecalho {
+    align-items: center;
+    display: flex;
     grid-area: cabecalho;
+    padding: 0 2rem;
 }
  
 .conteudo {    
     grid-area: conteudo;
+    padding: 0 2rem;
 }
 
 .rodape {
+    background: #fdfdfd;
+    color: #333333;
+    font-size: .8rem;
+    padding: 1rem;
+    text-align: center;
     grid-area: rodape;
 }

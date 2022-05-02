@@ -1,0 +1,36 @@
+@media screen and (max-width: 768px) {
+    .destaques__secundario:nth-child(n+2) {
+        display: none;
+        grid-column: none;
+        grid-row: none;
+    }
+    .destaques__principal, .destaques__categorias {
+        grid-column: 1 / 5;
+    }
+
+    .populares__conteudo {
+        flex-direction: column;
+    }
+    .populares__card {
+        width: 100%;
+        margin-bottom: 3rem;
+        margin-right: 0;
+        grid-template-rows: 150px auto;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {    
+    .populares__card {
+        width: calc(50% - 1rem);
+        margin-right: 1rem;           
+        grid-template-rows: 173px auto;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .populares__card {
+        width: calc(33.33% - 1rem);
+        margin-right: 1rem;
+        grid-template-rows: 173px auto;
+    }
+}
