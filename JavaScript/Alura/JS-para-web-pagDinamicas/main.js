@@ -1,10 +1,17 @@
 const listaDeTeclas = document.querySelectorAll('.tecla');
+const somDeTeclas = document.querySelectorAll('audio');
 
+for(let i = 0; i < listaDeTeclas.length; i++){   
+    listaDeTeclas[i].addEventListener('click', () => {
+        somDeTeclas[i].play();
+    });    
+}
 
-
-
-
-
+/*
+    listaDeTeclas[i].onclick = () => {
+        somDeTeclas[i].play();
+    };
+    */
 /*const pom = document.querySelector('.tecla_pom');
 const clap = document.querySelector('.tecla_clap');
 const tim = document.querySelector('.tecla_tim');
