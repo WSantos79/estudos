@@ -1,11 +1,28 @@
 const listaDeTeclas = document.querySelectorAll('.tecla');
 const somDeTeclas = document.querySelectorAll('audio');
 
-for(let i = 0; i < listaDeTeclas.length; i++){   
+for(let i = 0; i < listaDeTeclas.length; i++){
     listaDeTeclas[i].addEventListener('click', () => {
-        somDeTeclas[i].play();
-    });    
+        somDeTeclas[i].play();        
+    });
+
+    listaDeTeclas[i].addEventListener('keydown', (e) => {        
+        if(e.code === 'Space' || e.code === 'Enter'){
+            listaDeTeclas[i].classList.add('ativa');            
+        }
+    });
+
+    listaDeTeclas[i].addEventListener('keyup', () => {
+        listaDeTeclas[i].classList.remove('ativa');
+    });
 }
+
+
+
+
+
+
+
 
 /*
     listaDeTeclas[i].onclick = () => {
