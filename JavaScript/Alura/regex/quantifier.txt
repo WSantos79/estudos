@@ -4,3 +4,23 @@
 {n} = exatamente n vezes`
 {n,} = no mínimo n vezes
 {n, m} = no mínimo n+1 vezes, no máximo m vezes
+
+. = qlqr elemento
+
+\s significa whitespace e é um atalho para [ \t\r\n\f]
+
+\w significa word char e é uma atalho para [A-Za-z0-9_]
+
+/d todos os dígitos [0-9]
+
+
+âncoras:
+
+/b = palavra exata word boundary ex: \bteste\b  ... so nao podendo ter um word char antes ou depois
+
+^ = no inicio tem que ter... ex: ^teste
+
+$ = tem que ter no final.... ex: teste$
+
+
+
