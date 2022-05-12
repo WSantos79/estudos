@@ -22,5 +22,23 @@
 
 $ = tem que ter no final.... ex: teste$
 
+Declaramos um grupo com ().
+Através do ?:, dizemos que não queremos ver esse grupo na resposta
+
+| => pipe pode ter um OU outro ex: ([a-z.]{4,14}[a-z\d])@(?:caelum.com.br|alura.com.br)
+super.mario@caelum.com.br extrai super.mario
 
 
+---- validar email ----
+
+^([\w-]\.?)+@([\w-]+\.)+([A-Za-z]{2,4})+$
+
+Vamos por partes na explicação:
+
+    a regex usa âncoras no início ^ e fim $ para garantir o match inteiro;
+    antes do @, temos: ^([\w-]\.?)+
+        definimos uma classe com word-chars e hífen, seguido por um ponto opcional: [\w-]\.?
+        essa classe pode se repetir uma ou mais vezes, então criamos um grupo e + ao final: ([\w-]\.?)+
+    depois do @, temos:
+        ([\w-]+\.)+, que é bastante parecido com o anterior ao @, porém com o . obrigatório,
+        ([A-Za-z]{2,4})+$, que é o final da nossa regex, seleciona o domínio do email, como br, com, us. O mínimo de letras dessa parte final devem ser 2 e no máximo 4.
