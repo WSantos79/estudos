@@ -1,4 +1,4 @@
-const cpf = '34532622808';
+const cpf = '111.222.333';
 
 validarCPF(cpf);
 
