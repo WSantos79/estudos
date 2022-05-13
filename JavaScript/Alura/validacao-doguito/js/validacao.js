@@ -150,7 +150,7 @@ function checaDigitoVerificador(cpf, multiplicador) {
         contador++
     }
 
-    if(digitoVerificador == confirmaDigito(soma)) {
+    if(digitoVerificador == confirmaDigito(soma)) { 
         return checaDigitoVerificador(cpf, multiplicador + 1)
     }
 
