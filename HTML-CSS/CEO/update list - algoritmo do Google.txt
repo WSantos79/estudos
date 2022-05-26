@@ -1,0 +1,140 @@
+Lista das 14 principais atualizações do algoritmo do Google
+
+Para conhecer todo esse histórico de mudanças, confira agora a lista das 14 principais mudanças que já aconteceram ao longo dos anos.
+1. Florida (2003) 🌴
+
+Essa foi a primeira grande atualização do Google. Foi ela quem colocou o SEO no mapa, removendo no seu lançamento pelo menos 50% dos sites listados até então.
+
+A Florida foi lançada para combater os sites de baixa qualidade, que utilizavam más práticas, como keyword stuffing.
+2. Panda (2011) 🐼
+
+Bem mais tarde, a atualização Panda, de 2011, afetou quase 12% dos resultados de pesquisa, penalizando sites que apresentavam conteúdos de baixa qualidade, principalmente aqueles que contavam com muitos anúncios.
+
+A partir dessa atualização, todas as que vieram em seguida focaram na qualidade do conteúdo dos sites.
+3. Penguin (2012) 🐧
+
+Lançada no ano seguinte, a Penguin, que na época ficou conhecida como Webspam Update, foi responsável por conter o excesso de otimizações no conteúdo.
+
+Na época, impactou aproximadamente 3,1% dos resultados de buscas em inglês. O objetivo era penalizar sites que praticavam keyword stuffing, dentre outros esquemas de black hat SEO.
+
+Assim como a antecessora, passou por uma série de melhorias e lançamentos, até chegar na versão 4.0 (2016), quando oficialmente fez parte do algoritmo do Google e começou a atuar em tempo real.
+4. Hummingbird (2013) 🐦
+
+Diferente das anteriores, a Hummingbird não foi apenas uma mudança no algoritmo, mas sim uma revisão completa dele.
+
+A partir de 2013, os resultados passaram a ir além da palavra-chave, considerando o universo semântico. Isso inclui sinônimos e o contexto em que os termos estão inseridos, além de outros fatores complexos, como localização do usuário e pesquisas feitas anteriormente.
+
+O seu objetivo principal era tornar os resultados mais relacionados com a intenção de busca do usuário.
+5. HTTPS/SSL Update (2014) 🔒
+
+Após incentivar desenvolvedores a investirem em segurança, essa atualização de 2014 veio para anunciar que o HTTPS se tornava um fator de ranqueamento. Essa foi uma forma de ampliar o incentivo para tornar a internet mais segura.
+
+Isso foi feito porque sites que possuem certificado SSL (e assim migram para HTTPS) usam informações criptografadas, impedindo que os dados sejam identificados no meio do caminho, caso interceptados.
+6. Mobile Friendly Update – Mobilegeddon (2015) 📱
+
+Essa atualização voltada para dispositivos móveis foi chamada de Mobilegeddon, em referência ao filme Armageddon, pelo impacto que os especialistas acreditavam que iria causar. Mas, na prática, o impacto não foi tão grande.
+
+A Mobilegeddon passou a priorizar sites amigáveis para os mecanismos de busca dos dispositivos móveis, sem considerar se a página era mais ou menos adaptável a eles: ou era ou não era.
+7. Rankbrain (2015) 🧠
+
+No mesmo ano, o Google lançou o Rankbrain, sistema que incorpora a inteligência artificial ao algoritmo, ajudando na interpretação e apresentação dos resultados de busca.
+
+Segundo o Google, o sistema se tornou um dos três principais fatores de ranqueamento, juntamente com a linkagem e o conteúdo. Otimizar o site para o Rankbrain, no entanto, era mais difícil: só podia ser feito explorando palavras-chave que fazem parte da semântica.
+
+Para saber mais, acesse o post:Desvendando mistérios de RankBrain: como funciona e como pode influenciar seus resultados
+8. Fred (2017) fred
+
+A atualização Fred foi lançada em 2017 para identificar sites com conteúdo de baixa qualidade e muitos banners de propaganda.
+
+O analista de tendências do Google, John Mueller, disse à época que “se você estiver seguindo boas práticas de SEO, o único motivo para penalização do seu site é a baixa qualidade de conteúdo”.
+9. Medical Update (2018) 🏥
+
+Lançada em agosto de 2018, essa core update gerou grande impacto no mercado por causar alterações no posicionamento de diversos sites. Mas logo ficou claro que o maior impacto aconteceu nas páginas da categoria YMYL, sigla para Your Money, Your Life.
+
+Essas são as páginas que tratam de assuntos ligados principalmente a saúde e finanças, ou seja, que podem impactar diretamente na vida das pessoas. Por esse motivo, a atualização ganhou o nome de Medical Update.
+
+Com base na análise de vários portais, essa atualização do algoritmo do Google foi considerada como uma medida para melhorar as métricas de qualidade, principalmente os fatores EAT (falaremos mais sobre esse termo no próximo item). E nesse caso, precisamos destacar um ponto específico: os autores dos conteúdos.
+
+A mudança deixou claro que os sites impactados negativamente tratavam de assuntos YMYL escritos por pessoas que não tinham perfil nem experiência para isso. Por exemplo: para falar sobre saúde, é importante contar com um médico; para indicar opções de investimento, é importante que o autor tenha experiência nesse mercado.
+
+Em resumo, contar com conteúdos de autoridades na área faz diferença nos resultados. A partir dessa mudança, os conteúdos melhor ranqueados nessa categoria passaram a ser aqueles que incluíram os perfis completos dos autores.
+10. EAT (2019) 🍔
+
+A partir da grande mudança de agosto de 2018, tivemos outras alterações que foram complementares a ela. E a atualização de março de 2019 tratou de termos já identificados pelos profissionais de SEO, mas que não ficaram claros nas mudanças anteriores. Estamos falando do EAT (que não tem relação com comida!).
+
+Essa é a sigla para Expertise, Authoritativeness and Trustworthiness (Expertise, Autoridade e Credibilidade em português), que a partir dessa mudança passou a ser uma diretriz fundamental para o ranqueamento.
+
+Apesar de já serem itens levados em consideração na produção de conteúdo de qualidade, a mudança deixou ainda mais claro que as credenciais e a formação dos autores, além da relevância das empresas, possuem relação direta com o resultado orgânico dos conteúdos.
+
+Quem trouxe detalhes a respeito desse tema foi a Marie Haynes, palestrante do RD Summit 2018 e referência em SEO.
+Entenda cada um dos 3 fatores do EAT
+
+Durante sua palestra no RD Summit, em novembro de 2018, Marie Haynes previu que “em um ou dois anos, vocês vão ouvir falar muito de EAT”. E na sua participação, a quality rater responsável pela Marie Haynes Consulting trouxe vários detalhes sobre o tema:
+
+1. Expertise
+
+Para ter bons resultados, você precisa ser um especialista no seu campo de atuação. Por isso, a experiência dos autores conta bastante: é melhor contar com um médico especialista em diabetes falando sobre o tema do que uma pessoa que possui a doença, por exemplo.
+
+2. Autoridade
+
+É preciso mostrar que você é uma autoridade no assunto. Se a sua página é uma comunidade ou fórum de discussão, a qualidade das discussões é o que direciona a autoridade. Comentários de spam ou pouco elaborados, como algo parecido com “grande post, muito obrigada!”, podem ser prejudiciais.
+
+Na prática, ter um artigo sobre a sua empresa ou produto na Wikipédia ou em outros portais de notícia também indica que sua página possui autoridade elevada.
+
+3. Confiabilidade
+
+É necessário mostrar aos usuários que eles podem confiar em seu site, uma exigência especialmente importante para ecommerces, que pedem informações de cartão de crédito para efetivar as compras.
+
+Erros gramaticais e de ortografia também são considerados critérios de confiabilidade. Uma palavra escrita errada já pode prejudicar seu ranqueamento, já que esse é um sinal de baixa qualidade. Além disso, não utilize conteúdos com tradução automática. “Se quiser um conteúdo traduzido, peça para um ser humano fazer para você”, falou Marie.
+11. Atualização de confiabilidade (2019) 🤝
+
+No dia 3 de junho, uma nova atualização do algoritmo do Google foi destaque não só pelo impacto gerado nos sites, mas também por ser a primeira anunciada antecipadamente pela empresa.
+
+Esse era um pedido constante da comunidade, que sempre é surpreendida por atualizações do algoritmo. Para descobrir detalhes da mudança, geralmente é preciso que vários profissionais analisem sites que sofreram alterações positivas ou negativas.
+
+Com esse anúncio um dia antes do lançamento, a comunidade internacional já ficou atenta para qualquer alteração nas métricas.
+
+Confira o tweet feito no perfil Google SearchLiaison: Amanhã, lançaremos uma ampla atualização do algoritmo principal, como fazemos várias vezes por ano. É chamado de Atualização Principal de junho de 2019. Nossas orientações sobre essas atualizações permanecem como abordamos anteriormente.
+
+    Tomorrow, we are releasing a broad core algorithm update, as we do several times per year. It is called the June 2019 Core Update. Our guidance about such updates remains as we’ve covered before. Please see this tweet for more about that:https://t.co/tmfQkhdjPL
+
+    — Google SearchLiaison (@searchliaison) June 2, 2019
+
+O motivo para que essa atualização seja reconhecida pelo impacto na confiabilidade é que ela gerou resultados negativos principalmente para os sites de notícia. No Reino Unido, por exemplo, o The Daily Mail divulgou que perdeu 50% do seu tráfego vindo das pesquisas orgânicas após a atualização.
+
+A mudança deixou claro que a confiança do público na qualidade dos conteúdos se tornou um fator ainda mais relevante.
+12. Atualização de diversidade (2019) 📑
+
+Entre as principais mudanças realizadas no algoritmo do Google, essa foi a mais rápida levando em conta o tempo entre uma atualização e outra: foram apenas 3 dias. No dia 6 de junho de 2019 foi lançada a atualização de diversidade.
+
+A partir de então, os sites passaram a contar com apenas 2 resultados diferentes na primeira página da SERP. Isso significa que portais que contavam com vários resultados aparecendo para uma mesma pesquisa tiveram esse volume de links reduzido para dois.
+
+Essa mudança teve o objetivo de diversificar os resultados, evitando que sites de autoridade mais alta conseguissem captar diversas posições entre as 10 primeiras.
+13. BERT (2019) 👁‍🗨
+
+Antes de fechar 2019, o Google trouxe mais uma alteração no seu algoritmo, baseado em um projeto de processamento de linguagem natural com redes neurais.
+
+BERT, sigla para Bidirectional Encoder Representations from Transformers, é o nome desse algoritmo implementado inicialmente para as pesquisas em língua inglesa.
+
+Para conhecer todos os detalhes sobre essa atualização, confira o conteúdo completo: Google anuncia BERT, seu novo algoritmo de pesquisa.
+14. Favicon e posição 0 (2020) 🏆
+
+O ano de 2020 começou não com uma, mas sim com duas mudança no mês de janeiro. A primeira delas, que é relacionada ao algoritmo, foi referente aos conteúdos da posição 0 (ou featured snippets). Antes a página de resultados apresentava o conteúdo em destaque e repetia ele na sua posição original. A partir da mudança, não há mais essa repetição.
+
+Já a segunda mudança está relacionada a aparência dos resultados, incluindo os anúncios. A intenção dessa atualização era refletir o que os usuários já visualizam nos dispositivos móveis. Mas dessa vez a mudança parece que não durou tanto tempo. É que a repercussão não foi nada boa por parte do público.
+
+Dessa vez a publicação no Twitter foi: Na semana passada, atualizamos a aparência da Pesquisa no computador para refletir o que há no celular há meses. Ouvimos seus comentários sobre a atualização. Sempre queremos melhorar a Pesquisa, por isso, vamos experimentar novos canais para favicons.
+
+    Last week we updated the look of Search on desktop to mirror what’s been on mobile for months. We’ve heard your feedback about the update. We always want to make Search better, so we’re going to experiment with new placements for favicons….
+
+    — Google SearchLiaison (@searchliaison) January 24, 2020
+
+>> Leia mais: Favicon: saiba o que é, sua importância e como fazer um para o seu site
+Por que é importante acompanhar as atualizações do algoritmo do Google?
+
+Agora que conhecemos as principais atualizações que aconteceram no algoritmo do Google ao longo dos anos, você sabe dizer por que é importante acompanhá-las?
+
+Podemos resumir que as mudanças do algoritmo são fundamentais por dois pontos principais:
+
+    Saber os motivos que estão gerando impacto nas métricas: sem esse acompanhamento, você vai sentir o impacto nas suas métricas mas não vai entender os motivos que estão gerando essa mudança;
+    Entender como se adaptar rapidamente às mudanças: conhecendo as atualizações o quanto antes, fica mais fácil criar um plano de ação para adaptar suas estratégias atuais.
