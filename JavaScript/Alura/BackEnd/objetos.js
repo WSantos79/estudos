@@ -18,3 +18,4 @@ console.log(estudante)
 delete estudante.telefone
 
 console.log(estudante)
+
