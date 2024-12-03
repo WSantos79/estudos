@@ -35,6 +35,3 @@ estudante.endereco.push({
 const listaEnderecosComComplemento = estudante.endereco.filter((endereco) => endereco.complemento) // retorna apenas endereços que contenham complemento
 
 console.log(listaEnderecosComComplemento);
-
-
-
